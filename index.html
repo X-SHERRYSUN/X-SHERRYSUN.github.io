@@ -601,6 +601,17 @@
                 top: 30px;
             }
 
+            .nav-breadcrumb a {
+                padding: 8px 4px;
+                margin: -8px -4px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .nav-breadcrumb a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
             .nav-menu {
                 display: none;
             }
@@ -1812,6 +1823,9 @@
 
         // Scroll to top function
         function scrollToTop() {
+            // Close mobile nav if it's open
+            closeMobileNav();
+            
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
