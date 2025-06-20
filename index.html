@@ -1291,7 +1291,7 @@
 <body>
     <!-- Fixed Navigation Frame -->
     <div class="nav-frame">
-        <div class="nav-breadcrumb">Sherry Sun / <span class="portfolio-text">Portfolio</span></div>
+        <div class="nav-breadcrumb"><a href="#" onclick="scrollToTop(); return false;" style="color: #FFFFFF; text-decoration: none; cursor: pointer;">Sherry Sun</a> / <span class="portfolio-text">Portfolio</span></div>
         <nav class="nav-menu">
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -1808,6 +1808,14 @@
         function isValidEmail(email) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     </script>
 </body>
