@@ -1,0 +1,79 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database files
+contact_data.db
+*.db
+
+# Admin functionality - DO NOT PUSH TO PUBLIC REPO
+admin.html
+server.js
+
+# Environment variables and config files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.js
+config.json
+
+# API Keys and secrets
+secrets.js
+secrets.json
+.secrets
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+tmp/
+temp/
+
+# Package manager files
+package-lock.json
+
+# Additional sensitive files
+admin/
+private/
+sensitive/
+
+# Figma MCP directory (if contains sensitive data)
+Figma-Context-MCP/ 
